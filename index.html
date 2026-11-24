@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario GTI - Pre-Entrega 10</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Volkswagen Golf GTI Mk6 - Gestor de Componentes</h1>
+    </header>
+
+    <main class="container">
+        <section class="card form-section">
+            <h2>Agregar Nuevo Componente</h2>
+            <form id="formComponente">
+                <div class="input-group">
+                    <label for="nombre">Nombre de la pieza:</label>
+                    <input type="text" id="nombre" placeholder="Ej. Intercooler Wagner" required>
+                </div>
+                <div class="input-group">
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" placeholder="Ej. Motor, Escape..." required>
+                </div>
+                <div class="input-group">
+                    <label for="precio">Precio ($):</label>
+                    <input type="number" id="precio" placeholder="Ej. 1200" required>
+                </div>
+                <div class="input-group">
+                    <label for="stock">Stock disponible:</label>
+                    <input type="number" id="stock" placeholder="Ej. 5" min="0" required>
+                </div>
+                <button type="submit" class="btn-primary">+ Agregar al Inventario</button>
+            </form>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="inputBusqueda" placeholder="Buscar componente por nombre o categoria...">
+        </section>
+
+        <div id="feedbackMensaje" class="feedback-oculto"></div>
+
+        <section class="inventario-section">
+            <h2>Lista de Componentes Actual</h2>
+            <p id="estadoCarga" class="estado-carga">Cargando componentes...</p>
+            <div id="contenedorInventario" class="grid-inventario"></div>
+        </section>
+    </main>
+</body>
+</html>

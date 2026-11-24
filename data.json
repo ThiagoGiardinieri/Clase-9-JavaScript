@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Kit K04 Turbo Hybrid",
+    "categoria": "Motor",
+    "precio": 1200,
+    "stock": 4
+  },
+  {
+    "id": 2,
+    "nombre": "Escape Downpipe 3\"",
+    "categoria": "Escape",
+    "precio": 450,
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "nombre": "Bobinas Audi R8",
+    "categoria": "Encendido",
+    "precio": 250,
+    "stock": 15
+  },
+  {
+    "id": 4,
+    "nombre": "Admision Directa Carbono",
+    "categoria": "Admision",
+    "precio": 380,
+    "stock": 6
+  }
+]
